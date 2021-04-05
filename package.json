@@ -11,11 +11,10 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "start": "react-dotenv && react-scripts start",
+    "start": "react-scripts start",
     "prebuild": "set CI=true react-scripts test --colors",
-    "build": "react-dotenv && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "serve": "react-dotenv && serve build",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "vercel --prod"
@@ -28,8 +27,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "react-dotenv": {
-    "whitelist": ["REACT_APP_REMOTE_API_URL"]
-  }
+  ]
 }
