@@ -28,5 +28,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "react-dotenv": {
+    "whitelist": ["REACT_APP_REMOTE_API_URL"]
+  }
 }

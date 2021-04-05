@@ -8,8 +8,6 @@ import Nav from './Nav/Nav';
 import config from './config';
 import './App.css';
 
-console.log(process.env.REMOTE_API_URL)
-
 class App extends Component {
   state = {
     bookmarks: [],
@@ -91,7 +89,7 @@ class App extends Component {
             />
             <Route
               exact
-              path='/update-bookmark/:id'
+              path='/update-bookmark/:bookmark_id'
               component={UpdateBookmark}
             />
           </div>

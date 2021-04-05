@@ -178,7 +178,7 @@ window.env = {
   "npm_package_dependencies_react_scripts": "2.1.1",
   "npm_package_description": "_This project is a demonstration for Thinkful's React course_",
   "npm_package_eslintConfig_extends": "react-app",
-  "npm_package_gitHead": "9edd5f0e5cd263f11eb1e6066c13812651d2cc3c",
+  "npm_package_gitHead": "39c1144485870b009cf4824fede90fc8d146e926",
   "npm_package_name": "bookmarks",
   "npm_package_private": "true",
   "npm_package_readmeFilename": "README.md",
