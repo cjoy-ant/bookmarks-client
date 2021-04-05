@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import config from '../config';
 import './BookmarkItem.css';
 
-function deleteBookmarkRequest(bookmarkId, cb) {
-  fetch(config.API_ENDPOINT + `/${bookmarkId}`, {
+function deleteBookmarkRequest(bookmark_id, cb) {
+  fetch(config.LOCAL_API_URL + `/${bookmark_id}`, {
     method: 'DELETE',
     headers: {
       'content-type': 'application/json',
@@ -21,7 +21,7 @@ function deleteBookmarkRequest(bookmarkId, cb) {
       // no content on success, so skip res.json()
     })
     .then(() => {
-      cb(bookmarkId)
+      cb(bookmark_id)
     })
     .catch(error => {
       console.error(error)

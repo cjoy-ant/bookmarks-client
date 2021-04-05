@@ -27,9 +27,9 @@ class App extends Component {
     })
   }
 
-  deleteBookmark = bookmarkId => {
-    const newBookmarks = this.state.bookmarks.filter(bm =>
-      bm.id !== bookmarkId
+  deleteBookmark = bookmark_id => {
+    const newBookmarks = this.state.bookmarks.filter(bookmark =>
+      bookmark.id !== bookmark_id
     )
     this.setState({
       bookmarks: newBookmarks
@@ -45,7 +45,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch(config.API_ENDPOINT, {
+    fetch(config.REMOTE_API_URL, {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
