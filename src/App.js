@@ -8,6 +8,8 @@ import Nav from './Nav/Nav';
 import config from './config';
 import './App.css';
 
+console.log(process.env.REMOTE_API_URL)
+
 class App extends Component {
   state = {
     bookmarks: [],
