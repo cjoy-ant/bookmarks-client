@@ -7,7 +7,7 @@ import config from '../config';
 import './BookmarkItem.css';
 
 function deleteBookmarkRequest(bookmark_id, cb) {
-  fetch(config.LOCAL_API_URL + `/${bookmark_id}`, {
+  fetch(config.REMOTE_API_URL + `/${bookmark_id}`, {
     method: 'DELETE',
     headers: {
       'content-type': 'application/json',

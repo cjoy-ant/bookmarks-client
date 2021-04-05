@@ -61,7 +61,7 @@ class UpdateBookmark extends Component {
     const { id, title, url, description, rating } = this.state
     const newBookmark = { id, title, url, description, rating }
 
-    fetch(config.LOCAL_API_URL + `/${bookmark_id}`, {
+    fetch(config.REMOTE_API_URL + `/${bookmark_id}`, {
       method: 'PATCH',
       body: JSON.stringify(newBookmark),
       headers: {
