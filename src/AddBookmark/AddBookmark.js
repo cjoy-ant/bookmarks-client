@@ -29,7 +29,7 @@ class AddBookmark extends Component {
       title: title.value,
       url: url.value,
       description: description.value,
-      rating: rating.value,
+      rating: Number(rating.value),
     }
     this.setState({ error: null })
     fetch(config.REMOTE_API_URL, {
@@ -111,6 +111,7 @@ class AddBookmark extends Component {
             <textarea
               name='description'
               id='description'
+              placeholder='write a description...'
             />
           </div>
           <div>
